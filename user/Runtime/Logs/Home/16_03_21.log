@@ -1,0 +1,39 @@
+[ 2016-03-21T10:59:50+08:00 ] ::1 /FGUserCenter/user.php?c=Router&a=request
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000267s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000690s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000764s ]
+SQL: SHOW COLUMNS FROM `server` [ RunTime:0.0039s ]
+SQL: select `server`.`channel_id`,`logic`.`sid`,`server`.`name`,`server`.`type`,`logic`.`activation`,`logic`.`db_m_host`,`logic`.`db_m_user`,`logic`.`db_m_pwd`,`logic`.`db_m_port`,`logic`.`db_s_host`,`logic`.`db_s_user`,`logic`.`db_s_pwd`,`logic`.`db_s_port`,`logic`.`dbname`,`logic`.`log_db_host`,`logic`.`log_db_user`,`logic`.`log_db_pwd`,`logic`.`log_db_port`,`logic`.`log_dbname`,`logic`.`redis_host`,`logic`.`redis_port`,`logic`.`redis_game`,`logic`.`redis_social`,`logic`.`redis_fight`,`logic`.`platform_url`,`logic`.`platform_sid`,`logic`.`script_server_id`,`channel`.`code`,`channel`.`callback` from `logic`,`server`,`channel`,`game` where `server`.`logic_id`=`logic`.`id` && `server`.`channel_id`=`channel`.`channel_id` && `logic`.`gid`=`game`.`gid` && `logic`.`gid`=`channel`.`gid` && `logic`.`gid`='1' && `game`.`status`<>'0' && `logic`.`status`<>'0' && `channel`.`status`<>'0' && `server`.`status`<>'0' [ RunTime:0.0039s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000842s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000901s ]
+
+[ 2016-03-21T14:06:39+08:00 ] ::1 /FGUserCenter/user.php?c=Router&a=request
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000094s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000613s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000710s ]
+SQL: SHOW COLUMNS FROM `server` [ RunTime:0.0069s ]
+SQL: select `server`.`channel_id`,`logic`.`sid`,`server`.`name`,`server`.`type`,`logic`.`activation`,`logic`.`db_m_host`,`logic`.`db_m_user`,`logic`.`db_m_pwd`,`logic`.`db_m_port`,`logic`.`db_s_host`,`logic`.`db_s_user`,`logic`.`db_s_pwd`,`logic`.`db_s_port`,`logic`.`dbname`,`logic`.`log_db_host`,`logic`.`log_db_user`,`logic`.`log_db_pwd`,`logic`.`log_db_port`,`logic`.`log_dbname`,`logic`.`redis_host`,`logic`.`redis_port`,`logic`.`redis_game`,`logic`.`redis_social`,`logic`.`redis_fight`,`logic`.`platform_url`,`logic`.`platform_sid`,`logic`.`script_server_id`,`channel`.`code`,`channel`.`callback` from `logic`,`server`,`channel`,`game` where `server`.`logic_id`=`logic`.`id` && `server`.`channel_id`=`channel`.`channel_id` && `logic`.`gid`=`game`.`gid` && `logic`.`gid`=`channel`.`gid` && `logic`.`gid`='1' && `game`.`status`<>'0' && `logic`.`status`<>'0' && `channel`.`status`<>'0' && `server`.`status`<>'0' [ RunTime:0.0039s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001007s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001157s ]
+
+[ 2016-03-21T14:07:02+08:00 ] ::1 /FGUserCenter/user.php?c=Router&a=request
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000064s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000391s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000452s ]
+SQL: SHOW COLUMNS FROM `server` [ RunTime:0.0024s ]
+SQL: select `server`.`channel_id`,`logic`.`sid`,`server`.`name`,`server`.`type`,`logic`.`activation`,`logic`.`db_m_host`,`logic`.`db_m_user`,`logic`.`db_m_pwd`,`logic`.`db_m_port`,`logic`.`db_s_host`,`logic`.`db_s_user`,`logic`.`db_s_pwd`,`logic`.`db_s_port`,`logic`.`dbname`,`logic`.`log_db_host`,`logic`.`log_db_user`,`logic`.`log_db_pwd`,`logic`.`log_db_port`,`logic`.`log_dbname`,`logic`.`redis_host`,`logic`.`redis_port`,`logic`.`redis_game`,`logic`.`redis_social`,`logic`.`redis_fight`,`logic`.`platform_url`,`logic`.`platform_sid`,`logic`.`script_server_id`,`channel`.`code`,`channel`.`callback` from `logic`,`server`,`channel`,`game` where `server`.`logic_id`=`logic`.`id` && `server`.`channel_id`=`channel`.`channel_id` && `logic`.`gid`=`game`.`gid` && `logic`.`gid`=`channel`.`gid` && `logic`.`gid`='1' && `game`.`status`<>'0' && `logic`.`status`<>'0' && `channel`.`status`<>'0' && `server`.`status`<>'0' [ RunTime:0.0029s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000956s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001097s ]
+

@@ -1,0 +1,63 @@
+[ 2016-03-29T17:38:41+08:00 ] ::1 /FGUserCenter/user.php?c=Router&a=request
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000163s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001575s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001830s ]
+SQL: SHOW COLUMNS FROM `server` [ RunTime:0.0035s ]
+SQL: select `server`.`channel_id`,`logic`.`sid`,`server`.`name`,`server`.`type`,`logic`.`activation`,`logic`.`db_m_host`,`logic`.`db_m_user`,`logic`.`db_m_pwd`,`logic`.`db_m_port`,`logic`.`db_s_host`,`logic`.`db_s_user`,`logic`.`db_s_pwd`,`logic`.`db_s_port`,`logic`.`dbname`,`logic`.`log_db_host`,`logic`.`log_db_user`,`logic`.`log_db_pwd`,`logic`.`log_db_port`,`logic`.`log_dbname`,`logic`.`redis_host`,`logic`.`redis_port`,`logic`.`redis_game`,`logic`.`redis_social`,`logic`.`redis_fight`,`logic`.`platform_url`,`logic`.`platform_sid`,`logic`.`script_server_id`,`channel`.`code`,`channel`.`callback` from `logic`,`server`,`channel`,`game` where `server`.`logic_id`=`logic`.`id` && `server`.`channel_id`=`channel`.`channel_id` && `logic`.`gid`=`game`.`gid` && `logic`.`gid`=`channel`.`gid` && `logic`.`gid`='1' && `game`.`status`<>'0' && `logic`.`status`<>'0' && `channel`.`status`<>'0' && `server`.`status`<>'0' [ RunTime:0.0027s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002019s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002224s ]
+
+[ 2016-03-29T17:38:49+08:00 ] ::1 /FGUserCenter/user.php?c=Router&a=request
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000088s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000816s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000975s ]
+SQL: SHOW COLUMNS FROM `account` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `account` WHERE `username` = 'guyunlong' LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `banned` [ RunTime:0.0033s ]
+SQL: SELECT `type` FROM `banned` WHERE `uid` = 10000 AND `starttime` <= 1459244329 AND `endtime` >= 1459244329 AND ( (`gid` = '0' || `gid` = '1') && (`sid` = '0' || `sid` = '104') )  [ RunTime:0.0041s ]
+SQL: SHOW COLUMNS FROM `logic` [ RunTime:0.0032s ]
+SQL: SELECT `activation` FROM `logic` WHERE `gid` = 1 AND `sid` = 104 LIMIT 1   [ RunTime:0.0031s ]
+NOTIC: [8] Undefined index: validate /Library/WebServer/Documents/FGUserCenter/ThinkPHP/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /Library/WebServer/Documents/FGUserCenter/ThinkPHP/Library/Think/Model.class.php 第 1128 行.
+NOTIC: [8] Undefined index: password /Library/WebServer/Documents/FGUserCenter/ThinkPHP/Library/Think/Model.class.php 第 1163 行.
+SQL: UPDATE `account` SET `last_login_time`='1459244329' WHERE `uid` = 10000 [ RunTime:0.0446s ]
+SQL: SHOW COLUMNS FROM `login` [ RunTime:0.0023s ]
+NOTIC: [8] Undefined index: validate /Library/WebServer/Documents/FGUserCenter/ThinkPHP/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /Library/WebServer/Documents/FGUserCenter/ThinkPHP/Library/Think/Model.class.php 第 1128 行.
+SQL: INSERT INTO `login` (`uid`,`udid`,`gid`,`sid`,`ctime`) VALUES ('10000','1q2w3e4r5t6y7u8i9o0p','1','104','1459244329') [ RunTime:0.0362s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000550s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000613s ]
+
+[ 2016-03-29T17:39:11+08:00 ] ::1 /FGUserCenter/user.php?c=Router&a=request
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000068s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000401s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000461s ]
+SQL: SHOW COLUMNS FROM `account` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `account` WHERE `username` = 'guyunlong' LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `banned` [ RunTime:0.0035s ]
+SQL: SELECT `type` FROM `banned` WHERE `uid` = 10000 AND `starttime` <= 1459244351 AND `endtime` >= 1459244351 AND ( (`gid` = '0' || `gid` = '1') && (`sid` = '0' || `sid` = '104') )  [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `logic` [ RunTime:0.0029s ]
+SQL: SELECT `activation` FROM `logic` WHERE `gid` = 1 AND `sid` = 104 LIMIT 1   [ RunTime:0.0014s ]
+NOTIC: [8] Undefined index: validate /Library/WebServer/Documents/FGUserCenter/ThinkPHP/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /Library/WebServer/Documents/FGUserCenter/ThinkPHP/Library/Think/Model.class.php 第 1128 行.
+NOTIC: [8] Undefined index: password /Library/WebServer/Documents/FGUserCenter/ThinkPHP/Library/Think/Model.class.php 第 1163 行.
+SQL: UPDATE `account` SET `last_login_time`='1459244351' WHERE `uid` = 10000 [ RunTime:0.0430s ]
+SQL: SHOW COLUMNS FROM `login` [ RunTime:0.0023s ]
+NOTIC: [8] Undefined index: validate /Library/WebServer/Documents/FGUserCenter/ThinkPHP/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /Library/WebServer/Documents/FGUserCenter/ThinkPHP/Library/Think/Model.class.php 第 1128 行.
+SQL: INSERT INTO `login` (`uid`,`udid`,`gid`,`sid`,`ctime`) VALUES ('10000','1q2w3e4r5t6y7u8i9o0p','1','104','1459244351') [ RunTime:0.0289s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000552s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000603s ]
+
